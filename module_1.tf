@@ -3,7 +3,7 @@ resource "aws_subnet" "pri_sub1" {
   cidr_block        = "10.0.1.0/24"
   availability_zone = var.az_1[0]
   tags = {
-    Name = "(var.name)-Pub-Sub_1"
+    Name = "(var.name)-Pri-Sub_1"
   }
 }
 
