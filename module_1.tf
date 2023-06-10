@@ -13,7 +13,7 @@ resource "aws_route_table_association" "pri_rtbas1" {
 }
 
 resource "aws_route_table" "pri_rtb1" {
-  vpc_id = aws_vpc.vpc1
+  vpc_id = aws_vpc.vpc1.id
   route {
     cidr_block = "0.0.0.0/0"
     gateway_id = aws_nat_gateway.ngw1.id
@@ -43,7 +43,7 @@ resource "aws_security_group" "pri_sg1" {
   }
 }
 
-resource "aws_instance" "instance1" {
+resource "aws_instance" "pri_instance1" {
   ami           = "ami-0f5ee92e2d63afc18"
   instance_type = "t2.micro"
   tags = {
