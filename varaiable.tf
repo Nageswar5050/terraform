@@ -8,12 +8,12 @@ variable "region" {
 
 variable "access_key" {
   type    = string
-  default = "AKIATHTLCWI2J2EYOTKG"
+  default = ""
 }
 
 variable "secret_key" {
   type    = string
-  default = "yY+H5CErvPklTyIea61uEVWwdusVyno81gqE3kiA"
+  default = ""
 }
 
 variable "az_1" {
